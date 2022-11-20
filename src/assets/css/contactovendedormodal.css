@@ -1,3 +1,4 @@
+
 #title-modal {
     color: #44BBA4;
 }
@@ -15,4 +16,8 @@
 ul li {
     font-size: 1.1rem;
     margin-bottom: 5px;
+}
+
+/* --- media query  --- */
+@media (max-width : 997px) {
 }
