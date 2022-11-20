@@ -1,0 +1,127 @@
+.contenedor-registro {
+    background-color: #D3D0CB;
+    padding: 2%;
+    height: 80vh;
+}
+.div-section {
+    background-color: #E7BB41;
+    width: 50%;
+    margin:0px auto;
+    border-radius: 8px;
+    border: 0.5px;
+    box-shadow: 0px 10px 30px -10px;
+}
+.div-section h4 {
+    padding-top: 2%;
+    text-align: center;
+    color: white;
+}
+.div-section h5 {
+    padding-top: 1%;
+    text-align: left;
+    color: white;
+    font-size: 1.1rem;
+    margin-left: 8%;
+}
+#container-form {
+    width: 100%;
+    margin-top: 1%;
+    padding: 0 1%; 
+}
+.columnas-form {
+    display: flex;
+    justify-content: center;
+
+}
+.label-input {
+    width: 90%;
+    text-align: left;
+}
+.label-input label{
+    margin-left: 5%;
+}
+.label-input input {
+    width: 90%;
+    margin:0px auto;
+
+}
+.is-required:after {
+    content: '*';
+    margin-left: 3px;
+    color: red;
+    font-weight: bold;
+}
+#id-columnas-form .btn-registro {
+    background-color: #44BBA4 ;
+    margin-top: 8%;
+    margin-left: 25%;
+    border-radius: 5px;
+    border: 0.5px #44BBA4 solid;
+    width: 50%;
+    height: 2.3rem;
+    color: white;
+}
+#ast {
+    color: red;
+}
+.errors-re {
+    color: red;
+    font-style: italic;
+    margin-left: 5%;
+    margin-bottom: 0;
+}
+/* .div-pregunta-reg {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.div-pregunta-reg p {
+    
+}
+#link-login {
+    margin-left: 0; 
+    width: 50%;
+    font-style: italic;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+    margin-left: 5%;
+}
+#link-login:hover {
+    
+    color: #44BBA4;
+    width: 50%rem;
+} */
+
+/* --- media query  --- */
+@media (max-width : 997px) {
+    .div-section {
+        width: 70%;
+    }
+}
+
+@media (max-width : 900px) {
+
+    .contenedor-registro {
+        height: 130vh;
+    }
+    .div-section {
+        width: 70%;
+    }
+    .columnas-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .label-input {
+        width: 100%;
+        margin-top: 1%;
+    }
+    #id-columnas-form .btn-registro {
+        margin-top: 4%;
+    }
+}
+@media (max-width : 528px) {
+    .div-section {
+        width: 80%;
+    }
+}

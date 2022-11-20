@@ -1,0 +1,76 @@
+.contenedor-home {
+    width: 100%;
+    background-color: #D3D0CB;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3% 4%;
+    height: 100vh;
+}
+.div-txt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #393E41;
+    width: 40%;  
+    margin-right: 4rem; 
+}
+.div-txt h1 {
+    color: #44BBA4;
+    margin-bottom: 1rem;
+}
+.div-txt p {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+.div-txt h3 {
+    font-style: italic;
+    font-family: 'Shadows Into Light Two', cursive;
+    margin-top: 1rem;
+}
+
+#slogan {
+    color: #393E41;
+}
+.img_home {
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: -9px 20px 30px -10px;
+}
+.img_home:hover {
+    filter: blur(5px);
+
+}
+
+#id-registro {
+    color: #E7BB41;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+/* --- media query  --- */
+@media (max-width : 768px) {
+    .contenedor-home {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        height: 130vh;
+    }
+    .div-txt {
+        width: 90%;  
+        margin-right: 0rem; 
+        margin-top: 0.5rem;
+    }
+
+
+    .div-txt h3 {
+        font-size: 1.6rem;
+    }
+    .div-img-home {
+         margin-top: 1rem;
+
+    }
+    .img_home {
+        width: 80%;
+    }
+}

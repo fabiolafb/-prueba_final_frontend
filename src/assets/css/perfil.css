@@ -1,0 +1,108 @@
+.container-perfil {
+    max-width: 100%;
+    background-color: white;
+    }
+.container-menu-perfil {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    }
+.container-texto {
+    max-width: 60%;
+    margin: 4% 7% 5% 0;
+    color: #43484b;
+    text-align: center;
+}
+.container-imgs img{
+    width: 8rem;  
+    }
+    .icon_edit {
+        border-radius: 75px;
+        margin-left: 12%;
+        margin-top: 2.5%;
+        position: absolute;
+        box-shadow: -9px 20px 30px -10px;
+    }
+    .icon_edit:hover {-webkit-transform:scale(1.3);transform:scale(1.3);}
+
+    .icon_form {
+        border-radius: 75px;
+        margin-left: 18%;
+        margin-top: 7.5%;
+        position: absolute;
+        box-shadow: -9px 20px 30px -10px;
+    }
+    .icon_form:hover {-webkit-transform:scale(1.3);transform:scale(1.3);}
+    .icon_heart {
+        margin-left: 10%;
+        margin-top: 9%;
+        position: absolute;
+        border-radius: 75px;
+        box-shadow: -9px 20px 30px -10px;
+    }
+    .icon_heart:hover {-webkit-transform:scale(1.3);transform:scale(1.3);}
+
+
+/* --- media query  --- */
+@media only screen and (max-width : 1100px) {
+    /* barra menu */
+    .card-superior-perfil {
+        width: 8rem;
+        height: 2.2rem;
+        margin: 1rem;
+    }
+   .card-superior-perfil h5 {
+         padding-top: 5.5%;
+        font-size: 1rem;
+    }
+    .id-tienda-perfil Button {
+        margin-right: 3rem;
+        max-width: 5rem;
+    }
+    .nav-name-seccion {
+        width: 12%;
+    }       
+
+    /* container inferior */
+    .container-imgs img{
+        width: 7rem;  
+    }
+    .icon_edit {
+        margin-left: 12%;
+        margin-top: 2.5%;
+    }
+    .icon_form {
+        margin-left: 19%;
+        margin-top: 8%;
+    }
+    .icon_heart {
+        margin-left: 8%;
+        margin-top: 11%;
+    }
+}
+
+@media only screen and (max-width : 850px) {
+     /* barra menu */
+    .nav-name-seccion {
+        width: 20%;
+    } 
+    #id-nav-menu {
+        width: 60%;
+    }    
+    #id-tienda-perfil {
+        width: 20%;
+    }
+
+    /* container inferior */
+    .container-texto {
+        max-width: 57%;
+    }
+    .container-menu-perfil-ordenar {
+        -ms-flex-direction: column;
+    }
+    .container-imgs img{
+        width: 6rem;  
+    }
+
+
+}

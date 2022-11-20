@@ -1,0 +1,192 @@
+.container-favoritos {
+    width: 100%;
+
+}
+/* nav favoritos */
+.barra-superior-tienda-fav {
+    background-color: #E7E5DF;
+    height: 4rem;
+}
+.link-volver {
+    justify-content: flex-end;
+    margin-right: 5rem;
+    padding-top: 0.5%;
+}
+#id-perfil {
+    color: #393E41;
+    text-decoration: none;
+    text-decoration-line: none;
+    margin-right: 2rem;
+    box-shadow: 0px 15px 20px -15px;
+}
+    #id-perfil:hover {
+        color:#E7BB41;
+    }
+    #id-perfil Button {
+        width: 8rem;
+}
+#id-tienda {
+    color: #393E41;
+    text-decoration: none;
+    text-decoration-line: none;
+    margin-right: 3rem;
+    box-shadow: 0px 15px 20px -15px;
+}
+    #id-tienda:hover {
+        color:#44BBA4;
+    }
+    #id-tienda Button {
+        width: 8rem;
+    }
+
+
+.container-tittle-fav {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+}
+.cont-tittle {
+    margin-top: 0.5rem;
+    text-align: center;
+    width: 100%;
+    color: #6a6c6d;
+}
+
+.cont-tittle p {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.container-favoritos hr {
+    height:.1vw;
+    width:90%;
+    border-width:0;
+    color: #6a6c6d;
+    background-color: #6a6c6d;
+    margin-left: 5%;
+}
+
+.div-card-prod-fav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    row-gap: 30px;
+    justify-items: center;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+    padding: 0 2rem;
+  }
+  
+/* Modal */
+.div-btn-modal-fav {
+    color: #ffffff;
+    position: relative;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    width: 80%;
+    text-align: center;
+}
+.div-btn-modal-fav:hover {
+    color: #ffffff;
+}
+
+.div-btn-modal-fav button::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    border-radius: 25px;
+    background-color: #E7BB41;
+    bottom: 0px;
+    left: 2;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .div-btn-modal-fav button:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+    color: #ffffff;
+  }
+  #btn-modal-fav {
+    background-color: transparent;
+    border: none;   
+    width: 80%;
+    color: #44BBA4;
+    font-size: 1rem;
+}
+
+/* --- media query  --- */
+@media (max-width : 1350px) { 
+    .div-card-prod-fav {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 1rem;
+    }
+
+}
+@media (max-width : 1143px) {
+    .cont-tittle {
+        width: 90%;
+    }
+    .cont-tittle h4 {
+        margin-left: 5rem;
+    }
+    .cont-tittle p {
+        margin-left: 5rem;
+    }    
+    .link-volver {
+        align-items: center;
+
+    }
+}
+
+
+@media (max-width : 997px) { 
+    #NavbarPrivado {
+        width: 100%;
+    }
+    .div-card-prod-fav {
+          grid-template-columns: repeat(2, 1fr);
+    }
+    .cont-tittle {
+        margin-top: 1rem;
+    }
+    .cont-tittle h4 {
+        margin-left: 3rem;
+        font-size: 1.5rem;
+    }
+    .cont-tittle p {
+        margin-left: 3rem;
+        font-size: 1.1rem;
+    }
+    #id-perfil Button {
+        width: 7rem;
+    }
+    #id-tienda Button {
+        width: 7rem;
+    }
+}
+
+@media (max-width : 720px) { 
+    .div-card-prod-fav {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 15px;
+  }
+}
+@media (max-width : 528px) { 
+    #NavbarPrivado {
+        width: 100%;
+    }
+    .div-card-prod-fav {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 15px;
+  }
+  .cont-tittle h4 {
+    margin-left: 0;
+    }
+    .cont-tittle p {
+        margin-left: 0;
+    } 
+    }

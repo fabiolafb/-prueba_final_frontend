@@ -1,0 +1,43 @@
+#id-footer-public {
+    background-color: #f7f4ee;
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 10%;
+}
+
+.logo-footer {
+    padding-top: 0.3rem;
+    margin-right: 0.5rem;
+}
+#id-footer-public hr {
+    height: 4rem;
+    width:.1vw;
+    border-width:0;
+    color:r#393E41;
+    background-color:#393E41;
+
+}
+.info-footer {
+    margin-left: 1rem;
+}
+.info-footer p {
+    padding-top: 0.2rem;
+    margin-bottom: 0.1rem;
+}
+.logo_rrss {
+    width: 1.5rem;
+    margin-right: 0.5rem;
+    filter: invert(0.5);
+    cursor: pointer;
+    padding-top: 0%;
+}
+
+/* --- media query  --- */
+@media (max-width : 768px) {
+    #id-footer-public {
+        height: 12%;
+        padding: 0 ;
+}
+}

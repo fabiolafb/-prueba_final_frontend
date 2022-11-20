@@ -1,0 +1,102 @@
+[
+  {
+    "userId": 1,
+    "nombre": "Anibal",
+    "apellido": "Reyes",
+    "email": "anibal.reyes@gmail.com",
+    "password": 1234,
+    "tienda": " ",
+    "nro": 973677515,
+    "favoritos": []
+  },
+  {
+    "userId": 2,
+    "nombre": "Leonardo",
+    "apellido": "Castillo",
+    "email": "ljcl79@gmail.com",
+    "password": 1234,
+    "tienda": " ",
+    "nro": 991234567,
+    "favoritos": []
+  },
+  {
+    "userId": 3,
+    "nombre": "Fabiola",
+    "apellido": "Fuentes",
+    "email": "fabitafb@gmail.com",
+    "password": 2107,
+    "tienda": " ",
+    "nro": 995414358,
+    "favoritos": []
+  },
+  {
+    "userId": 4,
+    "nombre": "Andrés",
+    "apellido": "Gómez",
+    "email": "agomez.vg@gmail.com",
+    "password": 2608,
+    "tienda": " ",
+    "nro": 982651109,
+    "favoritos": []
+  },
+  {
+    "userId": 5,
+    "nombre": "Claudio",
+    "apellido": "Román",
+    "email": "claudio.r@gmail.com",
+    "password": 1234,
+    "tienda": " ",
+    "nro": 993233823,
+    "favoritos": []
+  },
+  {
+    "userId": 6,
+    "nombre": "Andrés",
+    "apellido": "Hutchings",
+    "email": "andres_hut@gmail.com",
+    "password": 1234,
+    "tienda": " ",
+    "nro": 996572185,
+    "favoritos": []
+  },
+  {
+    "userId": 7,
+    "nombre": "Luis",
+    "apellido": "Salinas",
+    "email": "salinas.luis@gmail.com",
+    "password": 1234,
+    "tienda": " ",
+    "nro": 995449195,
+    "favoritos": []
+  },
+  {
+    "userId": 8,
+    "nombre": "Vanesa",
+    "apellido": "Segovia",
+    "email": "vanesa.segovia@gmail.com",
+    "password": 1234,
+    "tienda": "Tecno-market",
+    "nro": 998877665,
+    "favoritos": []
+  },
+  {
+    "userId": 9,
+    "nombre": "Ingrid",
+    "apellido": "Benítez",
+    "email": "decocasa@gmail.com",
+    "password": 1234,
+    "tienda": "Deco-casa",
+    "nro": 912345678,
+    "favoritos": []
+  },
+  {
+    "userId": 10,
+    "nombre": "Catalina",
+    "apellido": "San Martin",
+    "email": "cata.sm@gmail.com",
+    "password": 1234,
+    "tienda": "",
+    "nro": 932165478,
+    "favoritos": []
+  }
+]
