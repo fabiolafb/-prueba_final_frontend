@@ -1,18 +1,41 @@
 // Componentes
 import NavbarPrivado from "../components/NavbarPrivado";
 import MenuPerfil from "../components/MenuPerfil";
+import { useNavigate } from "react-router-dom";
 import { Form } from "react-bootstrap";
 // Estilos
 import "../assets/css/agregarpublic.css";
 
 
 const AgregarPublicacion = () => {
+
+const navigate = useNavigate();
+
+const guardarPublic = () => {
+  let name = document.getElementById("name").value;
+  let price = document.getElementById("price").value;
+  let adjunto = document.getElementById("adjunto").value;
+  let desc = document.getElementById("desc").value;
+
+  if (
+    name !== "" &&
+    price !== "" &&
+    adjunto !== "" &&
+    desc !== ""
+  ) {alert(
+      "Has creado con éxito tu publicación"
+    );
+    navigate("/mis-publicaciones")
+  } 
+}
+  
+
   return (
     <>
       <NavbarPrivado />
       <MenuPerfil />
       <div className="container-add-publicacion">
-        <form className="div-main">
+        <div className="div-main">
           <h4>Agregar publicación</h4>
           <h5>
             Los campos marcados con (<span id="asterisco">*</span>) son
@@ -25,6 +48,7 @@ const AgregarPublicacion = () => {
               <input
                 type="text"
                 name="name"
+                id="name"
                 className="form-control"
                 required
                 placeholder=""
@@ -35,6 +59,7 @@ const AgregarPublicacion = () => {
               <input
                 type="number"
                 name="price"
+                id="price"
                 className="form-control"
                 required
                 placeholder=""
@@ -48,6 +73,7 @@ const AgregarPublicacion = () => {
               <Form.Select
                 aria-label="Default select example"
                 className="select_input_cat"
+                id="select_input_cat"
               >
                 <option value="">Categorías</option>
                 <option value="1">Alimentación</option>
@@ -62,6 +88,7 @@ const AgregarPublicacion = () => {
               <input
                 type="file"
                 name="adjunto"
+                id="adjunto"
                 className="form-control"
                 accept=".jpg,.png"
                 required
@@ -73,9 +100,9 @@ const AgregarPublicacion = () => {
           <div className="columnas-form" id="id-columnas-form">
             <div className="label-input-prod">
               <label className="is-required">Descripción del producto</label>
-              <textarea
+              <input
                 type="text"
-                name="desc"
+                name="v"
                 className="form-control"
                 id="form-control-descr"
                 placeholder=""
@@ -88,13 +115,14 @@ const AgregarPublicacion = () => {
                 data-toggle="tooltip"
                 data-placement="top"
                 title="Guardar publicación"
+                onClick={guardarPublic}
               >
                 Guardar publicación
               </button>
             </div>
           </div>
           <br />
-        </form>
+        </div>
       </div>
     </>
   );
